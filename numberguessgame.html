@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game - In Matrix Theme</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Bebas+Neue&family=Bevan&family=Black+Ops+One&family=Changa+One&family=Cherry+Cream+Soda&family=Kanit:wght@200;500&family=Luckiest+Guy&family=Oxygen&family=Passion+One&family=Patrick+Hand&family=Phudu:wght@400;500&family=Proza+Libre&family=Ranchers&family=Rubik+Mono+One&family=Slackey&family=Ubuntu&family=Viga&family=Ysabeau&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&family=Exo+2&family=Michroma&family=Orbitron&family=Space+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+  <video autoplay muted loop id="myVideo">
+    <source src="matrix.mp4" type="video/mp4">
+  </video>
+
+  <div class="container">
+    <h1>GUESS ME TO LEAVE THE MATRIX</h1>
+    <h2><span class="type1"></span></h2>
+    <input type="number" name="" id="field" class="input" placeholder="Enter your guesses here">
+    <div class="container2">
+      <button class="btn" id="check">Check</button>
+      <button class="btn" id="reset">Reset</button>
+    </div>
+    <div id="score1">score : <span id="score"></span></div>
+    <span id="guess">No.of guess : <span id="guess1"></span></span>
+    <div class="hint" id="hint"></div>
+
+  </div>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
