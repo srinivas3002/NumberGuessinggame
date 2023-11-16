@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE MATRIX</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&family=Exo+2&family=Michroma&family=Orbitron&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <style>
+     /* font-family: 'Audiowide', cursive;
+font-family: 'Bungee', cursive;
+font-family: 'Exo 2', sans-serif;
+font-family: 'Michroma', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Space Mono', monospace; */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: rgb(27, 27, 27);
+            color: greenyellow;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+        }
+
+        h1 {
+            position: relative;
+            text-align: center;
+            top: 20px;
+            font-family: 'Michroma', sans-serif;
+        }
+
+
+        .morpheous {
+            width: auto;
+            height: 80vh;
+            border-image-outset: 5px;
+            position: relative;
+            bottom: -10%;
+            left: 27%;
+        }
+
+
+        .pills {
+            border: 2px solid black;
+            border-radius: 40%;
+            padding: 3px 10px;
+            color: black;
+            position: absolute;
+            outline: none;
+            transition: 0.5s;
+        }
+
+        #red {
+            left: 57.7%;
+            bottom: 30%;
+            rotate: 10deg;
+            background-color: red;
+        }
+
+        #blue {
+            left: 38.4%;
+            bottom: 30%;
+            rotate: -6deg;
+            background-color: rgb(0 116 186);
+        }
+
+        #red:hover {
+            cursor: pointer;
+            color: white;
+            background-color: black;
+        }
+
+        #blue:hover {
+            cursor: pointer;
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1><span class="type">Text goes here</span></h1>
+        <img src="./pills.png" alt="" class="morpheous">
+        <a href="numberguessgame.html"><button class="pills" id="red">Red</button></a>
+        <button class="pills" id="blue">Blue</button>
+    </div>
+</body>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".type", {
+        strings: ["welcome player Neo.", "The matrix has you", "Unfortunately no one can be", "told what the matrix is", "This is your last chance", "Choose either one of the pill", "You Choose blue pill to stay in the matrix", "You choose red pill to escape the matrix"],
+        typeSpeed: 50,
+        backSpeed: 50,
+    })
+</script>
+
+</html>
